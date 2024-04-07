@@ -21,7 +21,7 @@ const HeroImage = ({
         src={src}
         srcSet={srcSets}
         alt={alt}
-        className={cn("h-full", imageClassName)}
+        className={cn("h-full w-full", imageClassName)}
       />
     </div>
   );
