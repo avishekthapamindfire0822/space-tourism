@@ -1,17 +1,20 @@
 import React from "react";
 import LogoProps from "./LogoProps";
+import { cn } from "@/shared/lib/utils";
 
-const Logo = ({ height, width }: LogoProps) => {
+const Logo = ({ height, width, className }: LogoProps) => {
   const logoHeight = height ?? 48;
   const logoWidth = width ?? 48;
   return (
     <>
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width={logoWidth}
+        className={cn(className)}
         height={logoHeight}
+        width={logoWidth}
+        viewBox="0 0 48 48"
       >
-        <g fill="none" fill-rule="evenodd">
+        <g fill="none" fillRule="evenodd">
           <circle cx="24" cy="24" r="24" fill="#FFF" />
           <path
             fill="#0B0D17"

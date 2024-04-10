@@ -7,25 +7,58 @@ export const navigationItems: NavigationItem[] = [
   { title: "technology", url: "/technology" },
 ];
 
-export const backgroundImage = {
+export const heroImages = {
   home: {
-    srcSets:
-      "/images/home/background-home-desktop.jpg 1440w , /images/home/background-home-tablet.jpg 768w, /images/home/background-home-mobile.jpg 375w",
-    src: "/images/home/background-home-desktop.jpg",
+    alt: "Half of our planet as seen from the vantage point of space, illustrating its magnificence.",
+    defaultSrc: "/images/home/background-home-desktop.jpg",
+    sources: [
+      {
+        src: "/images/home/background-home-mobile.jpg",
+        maxWidth: "640px",
+      },
+      {
+        src: "/images/home/background-home-tablet.jpg",
+        maxWidth: "800px",
+      },
+    ],
   },
   crew: {
-    srcSets:
-      "/images/crew/background-crew-desktop.jpg 1440w , /images/crew/background-crew-tablet.jpg 768w, /images/crew/background-crew-mobile.jpg 375w",
-    src: "/images/crew/background-crew-desktop.jpg",
+    defaultSrc: "/images/crew/background-crew-desktop.jpg",
+    sources: [
+      {
+        src: "/images/crew/background-crew-mobile.jpg",
+        maxWidth: "640px",
+      },
+      {
+        src: "/images/crew/background-crew-tablet.jpg",
+        maxWidth: "800px",
+      },
+    ],
   },
   destination: {
-    srcSets:
-      "/images/destination/background-destination-desktop.jpg 1440w , /images/destination/background-destination-tablet.jpg 768w, /images/destination/background-destination-mobile.jpg 375w",
-    src: "/images/destination/background-destination-desktop.jpg",
+    defaultSrc: "/images/destination/background-destination-desktop.jpg",
+    sources: [
+      {
+        src: "/images/destination/background-destination-mobile.jpg",
+        maxWidth: "640px",
+      },
+      {
+        src: "/images/destination/background-destination-tablet.jpg",
+        maxWidth: "800px",
+      },
+    ],
   },
   technology: {
-    srcSets:
-      "/images/technology/background-technology-desktop.jpg 1440w , /images/technology/background-technology-tablet.jpg 768w, /images/technology/background-technology-mobile.jpg 375w",
-    src: "/images/technology/background-technology-desktop.jpg",
+    defaultSrc: "/images/technology/background-technology-desktop.jpg",
+    sources: [
+      {
+        src: "/images/technology/background-technology-mobile.jpg",
+        maxWidth: "640px",
+      },
+      {
+        src: "/images/technology/background-technology-tablet.jpg",
+        maxWidth: "800px",
+      },
+    ],
   },
 };

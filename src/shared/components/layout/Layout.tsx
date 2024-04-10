@@ -7,9 +7,9 @@ import { cn } from "@/shared/lib/utils";
 const Layout = ({ children }: BaseProps) => {
   return (
     <>
-      <header className={cn("flex justify-between items-center")}>
-        {/* <Logo /> */}
-        {/* <MobileNavigationDrawer /> */}
+      <header className={cn("flex mt-6 px-6 justify-between items-center")}>
+        <Logo height={40} width={40} />
+        <MobileNavigationDrawer />
       </header>
       {children}
     </>

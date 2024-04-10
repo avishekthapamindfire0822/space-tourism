@@ -12,7 +12,7 @@ const Hamburger = ({ height, width, className }: LogoProps) => {
       height={logoHeight}
       className={cn(className)}
     >
-      <g fill="#D0D6F9" fill-rule="evenodd">
+      <g fill="#D0D6F9" fillRule="evenodd">
         <path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z" />
       </g>
     </svg>
