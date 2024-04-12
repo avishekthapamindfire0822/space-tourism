@@ -1,8 +1,8 @@
 import React from "react";
-import LogoProps from "./LogoProps";
+
 import { cn } from "@/shared/lib/utils";
 
-const Logo = ({ height, width, className }: LogoProps) => {
+const Logo = ({ height, width, className }: React.SVGProps<SVGElement>) => {
   const logoHeight = height ?? 48;
   const logoWidth = width ?? 48;
   return (

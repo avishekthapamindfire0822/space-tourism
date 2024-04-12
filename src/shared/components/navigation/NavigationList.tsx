@@ -6,32 +6,28 @@ import { cn } from "@/shared/lib/utils";
 
 interface NavigationProps extends BaseProps {
   navigationItems: NavigationItem[];
-  navListStyleClassName?: string;
   onListItemClick?: () => void;
 }
 
 const NavigationList = ({
   navigationItems,
-  navListStyleClassName,
   onListItemClick,
   className,
 }: NavigationProps) => {
   return (
-    <nav className={cn(className)}>
-      <ul className={cn(navListStyleClassName)}>
-        {navigationItems.map((navigationItem, index) => {
-          return (
-            <li key={index}>
-              <NavigationListItem
-                order={index}
-                {...navigationItem}
-                onClick={onListItemClick}
-              />
-            </li>
-          );
-        })}
-      </ul>
-    </nav>
+    <ul className={cn(className)}>
+      {navigationItems.map((navigationItem, index) => {
+        return (
+          <li key={index} className={cn("")}>
+            <NavigationListItem
+              order={index}
+              {...navigationItem}
+              onClick={onListItemClick}
+            />
+          </li>
+        );
+      })}
+    </ul>
   );
 };
 
