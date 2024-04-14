@@ -20,7 +20,7 @@ const HeroImage = ({
   className,
 }: HeroImageProps) => {
   return (
-    <div className={cn("fixed inset-0 -z-50", className)}>
+    <div className={cn("fixed bg-gray-950 inset-0 -z-50", className)}>
       <picture>
         {sources?.map(({ src, maxWidth }, index) => {
           return (

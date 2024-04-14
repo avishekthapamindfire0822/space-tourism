@@ -10,53 +10,53 @@ export const navigationItems: NavigationItem[] = [
 export const heroImages = {
   home: {
     alt: "Half of our planet as seen from the vantage point of space, illustrating its magnificence.",
-    defaultSrc: "/images/home/background-home-desktop.jpg",
+    defaultSrc: "/images/home/background-home-desktop.webp",
     sources: [
       {
-        src: "/images/home/background-home-mobile.jpg",
+        src: "/images/home/background-home-mobile.webp",
         maxWidth: "640px",
       },
       {
-        src: "/images/home/background-home-tablet.jpg",
+        src: "/images/home/background-home-tablet.webp",
         maxWidth: "800px",
       },
     ],
   },
   crew: {
-    defaultSrc: "/images/crew/background-crew-desktop.jpg",
+    defaultSrc: "/images/crew/background-crew-desktop.webp",
     sources: [
       {
-        src: "/images/crew/background-crew-mobile.jpg",
+        src: "/images/crew/background-crew-mobile.webp",
         maxWidth: "640px",
       },
       {
-        src: "/images/crew/background-crew-tablet.jpg",
+        src: "/images/crew/background-crew-tablet.webp",
         maxWidth: "800px",
       },
     ],
   },
   destination: {
-    defaultSrc: "/images/destination/background-destination-desktop.jpg",
+    defaultSrc: "/images/destination/background-destination-desktop.webp",
     sources: [
       {
-        src: "/images/destination/background-destination-mobile.jpg",
+        src: "/images/destination/background-destination-mobile.webp",
         maxWidth: "640px",
       },
       {
-        src: "/images/destination/background-destination-tablet.jpg",
+        src: "/images/destination/background-destination-tablet.webp",
         maxWidth: "800px",
       },
     ],
   },
   technology: {
-    defaultSrc: "/images/technology/background-technology-desktop.jpg",
+    defaultSrc: "/images/technology/background-technology-desktop.webp",
     sources: [
       {
-        src: "/images/technology/background-technology-mobile.jpg",
+        src: "/images/technology/background-technology-mobile.webp",
         maxWidth: "640px",
       },
       {
-        src: "/images/technology/background-technology-tablet.jpg",
+        src: "/images/technology/background-technology-tablet.webp",
         maxWidth: "800px",
       },
     ],
