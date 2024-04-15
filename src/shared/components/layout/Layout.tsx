@@ -21,7 +21,7 @@ const Layout = ({ children }: BaseProps) => {
           <NavigationList
             navigationItems={navigationItems}
             className={cn(
-              "flex gap-8 px-12 lg:px-16 xl:gap-10 xl:px-32 backdrop-blur-md min-w-63.5 shadow-2xl"
+              "flex gap-8 px-12 lg:px-16 xl:gap-10 xl:px-36 backdrop-blur-md min-w-63.5 shadow-2xl"
             )}
           />
         </NavBar>

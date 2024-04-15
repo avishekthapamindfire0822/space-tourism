@@ -5,7 +5,7 @@ import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import Image from "next/image";
 
 interface ImageSource {
-  src: string;
+  srcSet?: string;
   maxWidth: string;
 }
 interface HeroImageProps extends BaseProps {
@@ -16,16 +16,16 @@ interface HeroImageProps extends BaseProps {
 const HeroImage = ({
   defaultSrc,
   sources,
-  alt = "",
   className,
+  alt = "",
 }: HeroImageProps) => {
   return (
     <div className={cn("fixed bg-gray-950 inset-0 -z-50", className)}>
       <picture>
-        {sources?.map(({ src, maxWidth }, index) => {
+        {sources?.map(({ srcSet, maxWidth }, index) => {
           return (
             <source
-              srcSet={src}
+              srcSet={srcSet}
               media={`(max-width :${maxWidth})`}
               key={index}
             ></source>

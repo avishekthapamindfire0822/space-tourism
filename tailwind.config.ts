@@ -10,14 +10,15 @@ const config = {
   ],
   prefix: "",
   theme: {
-    container: {
-      center: true,
-      padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
-    },
     extend: {
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: "1rem",
+          sm: "2rem",
+          lg: "4rem",
+        },
+      },
       backgroundSize: {
         40: "2.5rem",
         48: "3rem",
@@ -67,20 +68,24 @@ const config = {
         barlow: ["var(--font-barlow)"],
       },
       fontSize: {
-        15: "0.9375rem",
-        20: "1.25rem",
-        28: "1.75rem",
-        32: "2rem",
-        40: "2.5rem",
-        56: "3.5rem",
-        80: "5rem",
-        100: "6.25rem",
-        150: "9.375rem",
+        "7.15xl": "5rem",
+        "9.65xl": "9.375rem",
       },
       height: {
         0.5: "0.125rem",
         0.75: "0.1875rem",
         1.5: "0.375rem",
+        37.5: "9.375rem",
+      },
+      width: {
+        37.5: "9.375rem",
+      },
+      ringWidth: {
+        36: "2.25rem",
+      },
+      spacing: {
+        37.5: "9.375rem",
+        60.5: "15.125rem",
       },
       letterSpacing: {
         4.75: "0.296875rem",
@@ -99,6 +104,7 @@ const config = {
       margin: {
         21.5: "5.375rem",
       },
+
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
@@ -108,6 +114,9 @@ const config = {
       },
       maxWidth: {
         63.5: "15.875rem",
+      },
+      screens: {
+        "2xl": "1440px",
       },
     },
   },

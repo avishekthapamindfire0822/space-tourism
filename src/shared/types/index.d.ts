@@ -10,3 +10,12 @@ export interface BaseProps {
   className?: string;
   as?: HTMLElement;
 }
+
+export interface InfoPanelProps extends BaseProps {
+  title?: string;
+  subTitle?: string;
+  description?: string;
+  titleClassName?: string;
+  descriptionClassName?: string;
+  subTitleClassName?: string;
+}
