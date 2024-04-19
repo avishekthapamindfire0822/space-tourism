@@ -6,23 +6,34 @@ import { cn } from "@/shared/lib/utils";
 
 interface NavigationProps extends BaseProps {
   navigationItems: NavigationItem[];
-  onListItemClick?: () => void;
+  navListItemProps?: Pick<
+    React.ComponentProps<typeof NavigationListItem>,
+    "className"
+  >;
+  onListItemClick?: (item?: string) => void;
+  checkForActiveItem?: (item: string) => boolean;
 }
 
 const NavigationList = ({
   navigationItems,
   onListItemClick,
+  navListItemProps,
+  checkForActiveItem,
   className,
 }: NavigationProps) => {
   return (
     <ul className={cn(className)}>
       {navigationItems.map((navigationItem, index) => {
         return (
-          <li key={index} className={cn("")}>
+          <li key={index}>
             <NavigationListItem
+              className={cn(navListItemProps?.className)}
               order={index}
               {...navigationItem}
               onClick={onListItemClick}
+              isActive={
+                checkForActiveItem?.(navigationItem.title ?? "") || false
+              }
             />
           </li>
         );

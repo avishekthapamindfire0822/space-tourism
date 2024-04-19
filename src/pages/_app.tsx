@@ -9,7 +9,9 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <Layout>
       <main className={cn(bellefair.variable, barlowCondensed.variable)}>
-        <Component {...pageProps} />
+        <section>
+          <Component {...pageProps} />
+        </section>
       </main>
     </Layout>
   );

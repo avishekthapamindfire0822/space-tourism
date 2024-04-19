@@ -2,7 +2,8 @@ import { ClassValue } from "clsx";
 
 export interface NavigationItem {
   title: string;
-  url: string;
+  url?: string;
+  isLink?: boolean;
 }
 
 export interface BaseProps {
@@ -11,11 +12,15 @@ export interface BaseProps {
   as?: HTMLElement;
 }
 
-export interface InfoPanelProps extends BaseProps {
-  title?: string;
-  subTitle?: string;
-  description?: string;
-  titleClassName?: string;
-  descriptionClassName?: string;
-  subTitleClassName?: string;
+export interface Destination {
+  imageUrl: string;
+  blurImageUrl?: string;
+  title: string;
+  description: string;
+  distance: string;
+  travelTime: string;
 }
+
+export type DestinationData = {
+  [key: string]: Destination;
+};

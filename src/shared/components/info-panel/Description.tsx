@@ -4,12 +4,7 @@ import React from "react";
 
 const Description = ({ className, children }: BaseProps) => {
   return (
-    <p
-      className={cn(
-        "font-barlow max-w-80 md:mx-auto text-secondary text-base leading-6",
-        className
-      )}
-    >
+    <p className={cn("font-barlow text-secondary text-base", className)}>
       {children}
     </p>
   );

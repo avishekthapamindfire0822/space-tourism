@@ -12,7 +12,14 @@ import { navigationItems } from "@/shared/constants";
 import { cn } from "@/shared/lib/utils";
 import NavBar from "./NavBar";
 
-const MobileNavigationDrawer = ({ className }: BaseProps) => {
+interface MobileNavigationDrawerProps extends BaseProps {
+  checkForActiveItem?: (item: string) => boolean;
+}
+
+const MobileNavigationDrawer = ({
+  className,
+  checkForActiveItem,
+}: MobileNavigationDrawerProps) => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const listItemClickHandler = () => {
     setIsDrawerOpen(false);
@@ -32,6 +39,7 @@ const MobileNavigationDrawer = ({ className }: BaseProps) => {
             navigationItems={navigationItems}
             className={cn("mt-21.5 flex flex-col gap-8 border-b-gray-200")}
             onListItemClick={listItemClickHandler}
+            checkForActiveItem={checkForActiveItem}
           />
         </NavBar>
       </DrawerContent>

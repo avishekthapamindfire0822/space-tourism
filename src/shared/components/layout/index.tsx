@@ -1,4 +1,4 @@
 import Layout from "./Layout";
-import Container from "./Container";
+import PageContainer from "./PageContainer";
 
-export { Layout, Container };
+export { Layout, PageContainer };

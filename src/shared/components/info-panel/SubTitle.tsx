@@ -4,12 +4,7 @@ import React from "react";
 
 const SubTitle = ({ className, children }: BaseProps) => {
   return (
-    <h5
-      className={cn(
-        "text-base md:text-xl uppercase text-secondary font-barlow tracking-2.7",
-        className
-      )}
-    >
+    <h5 className={cn("uppercase text-secondary font-barlow", className)}>
       {children}
     </h5>
   );

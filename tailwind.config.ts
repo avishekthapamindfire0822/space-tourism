@@ -68,14 +68,33 @@ const config = {
         barlow: ["var(--font-barlow)"],
       },
       fontSize: {
-        "7.15xl": "5rem",
-        "9.65xl": "9.375rem",
+        "heading-1": "9.375rem",
+        "heading-2": "6.25rem",
+        "heading-3": "3.5rem",
+        "heading-4": "2rem",
+        "heading-5": ["1.75rem", { letterSpacing: "0.3rem" }],
+        "subheading-1": "1.75rem",
+        "subheading-2": [
+          "0.875rem",
+          {
+            letterSpacing: "2.35px",
+          },
+        ],
+        nav: [
+          "1rem",
+          {
+            letterSpacing: "2.7px",
+          },
+        ],
+        body: "1rem",
       },
       height: {
         0.5: "0.125rem",
         0.75: "0.1875rem",
         1.5: "0.375rem",
         37.5: "9.375rem",
+        42.5: "10.625rem",
+        75: "18.75rem",
       },
       width: {
         37.5: "9.375rem",
@@ -85,6 +104,8 @@ const config = {
       },
       spacing: {
         37.5: "9.375rem",
+        42.5: "10.625rem",
+        74.5: "18.75rem",
         60.5: "15.125rem",
       },
       letterSpacing: {
